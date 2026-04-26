@@ -1,0 +1,1611 @@
+bit.ly/ariel-js 
+
+p.3
+זהר עמיהוד
+zohar@seoreport.co.il
+052-8200-895
+
+p.15
+https://blog.google/products/gemini/guided-learning-google-gemini/
+https://openai.com/index/chatgpt-study-mode/
+
+
+p.20
+https://ariel-ac-il.zoom.us/j/89994513254
+Meeting ID: 899 9451 3254
+Passcode: 740405
+
+p.21
+https://www.ariel.ac.il/wp/studentsservices/?p=5056
+
+
+p.27
+https://www.youtube.com/watch?v=uywR1cLIdh8
+
+
+p.35
+http://net-informations.com/js/iq/side.htm
+
+
+p.43
+https://bit.ly/ariel-js 
+
+
+p.46
+https://bit.ly/ariel-js 
+
+
+p.49
+https://code.visualstudio.com
+
+
+p.53
+Prettier, Prettier
+Live Server, Ritwick Dey
+ESLint, Microsoft
+
+
+p.54
+https://code.visualstudio.com/docs
+https://code.visualstudio.com/docs/editor/codebasics
+https://code.visualstudio.com/docs/languages/html
+https://learn.microsoft.com/en-us/visualstudio/ide/use-bidirectional-languages
+https://www.youtube.com/watch?v=nORT3-kONgA
+
+
+p.78
+<body>
+  <p id="uni" class="comm">ariel</p>
+</body>
+
+window.document.getElementById("uni");
+window.document.getElementsByTagName("p");
+window.document.getElementsByClassName("comm");
+
+
+p.79
+<p id="uni">ariel</p>
+<script>
+  let showEl = document.getElementById("uni");
+  let show = showEl.innerHTML;
+  console.log(show);
+</script>
+
+
+p.81
+let showEl = document.getElementById("uni");
+let show = showEl.innerHTML;
+
+let show = document.getElementById("uni").innerHTML;
+
+
+p.88
+document.getElementById("uni").innerHTML = "ArIeL";
+
+let myCampusEl = document.getElementById("uni");
+myCampusEl.innerHTML = "ArIeL";
+
+
+p.89
+document.getElementById("uni").style.fontSize = "28px";
+
+let myCampusEl = document.getElementById("uni");
+myCampusEl.style.fontSize = "28px";
+
+
+p.92
+https://www.w3schools.com/jsref/dom_obj_all.asp
+
+
+p.93
+https://www.w3schools.com/jsref/dom_obj_style.asp
+
+
+p.96
+<p id="uni">ariel</p>
+<script>
+  document.getElementById("uni").style.fontSize = "28px";
+</script>
+
+<p id="uni">ariel</p>
+<script>
+  function getUniBigText() {
+    document.getElementById("uni").style.fontSize = "28px";
+  }
+  getUniBigText();
+</script>
+
+
+p.98
+<p id="uni" onclick="getUniBigText();">ariel</p>
+<script>
+  function getUniBigText () {
+    document.getElementById("uni").style.fontSize = "28px";
+  }
+</script>
+
+
+p.100
+let showEl = document.getElementById("uni");
+let show = showEl.innerText;
+
+let show = document.getElementById("uni").innerText;
+
+
+p.102
+https://www.youtube.com/watch?v=dzbgpGuX6-s
+
+
+p.104
+<body onclick="OnClickWhatOBJ();">
+  <p id="uni">ariel</p>
+  <p id="city">ARIEL</p>
+  <script>
+   function OnClickWhatOBJ() {
+     let whatObjType = event.type;
+     let whatObjId = event.target.id;
+     let whatObjContent = event.target.innerText;
+     console.log("Type: " + whatObjType + "\n" +
+                 "Obj id: " + whatObjId + "\n" + 
+                 "Content: " + whatObjContent);
+   }
+  </script>
+ </body>
+
+https://www.w3schools.com/jsref/dom_obj_event_prop.asp
+https://www.w3schools.com/jsref/event_target.asp
+
+
+p.110
+document.getElementsByTagName("tag name");
+
+document.getElementsByClassName("class-name");
+
+
+p.113
+<p class="para-mio" …> x 4
+
+<button type="button" onclick="paintBG();">Click Me!</button>
+
+<script>
+  function paintBG() {
+   document.getElementsByClassName("para-mio")[0].style.backgroundColor = "gray";
+   document.getElementsByClassName("para-mio")[1].style.backgroundColor = "gray";
+   document.getElementsByClassName("para-mio")[2].style.backgroundColor = "gray";
+   document.getElementsByClassName("para-mio")[3].style.backgroundColor = "gray";
+  }
+</script>
+
+<script>
+  function paintBG() {
+   let pTags = document.getElementsByClassName("para-mio");
+   pTags[0].style.backgroundColor = "gray";
+   pTags[1].style.backgroundColor = "gray";
+   pTags[2].style.backgroundColor = "gray";
+   pTags[3].style.backgroundColor = "gray";
+  }
+</script>
+
+
+p.114
+<script>
+  function paintBG() {
+   let myBGcolor = "gray";
+   let pTags = document.getElementsByClassName("para-mio");
+   pTags[0].style.backgroundColor = myBGcolor;
+   pTags[1].style.backgroundColor = myBGcolor;
+   pTags[2].style.backgroundColor = myBGcolor;
+   pTags[3].style.backgroundColor = myBGcolor;
+  }
+</script>
+
+
+p.115
+let pTags = document.getElementsByClassName("className");
+let noOfItems = pTags.length;
+
+
+p.116
+for (let index = 0; index < 10; index++) {
+  console.log(index);
+}
+
+
+p.117
+for (let index = 0; index < array.length; index++) {
+   element = array[index];         
+}
+
+
+p.118
+let pTags = document.getElementsByClassName("para-mio");
+for (let index = 0; index < pTags.length; index++) {
+  pTags[index].style.backgroundColor = "gray";
+}
+
+
+p.119
+https://www.w3schools.com/js/js_arithmetic.asp
+
+
+p.108
+<p class="para-mio" …>   x 4
+
+<button type="button" onclick="paintBG();">Click Me!</button>
+
+<script>
+  function paintBG() {
+   let myBGcolor = "gray";
+   let pTags = document.getElementsByClassName("para-mio");
+   for (let index = 0; index < pTags.length; index++) {
+     pTags[index].style.backgroundColor = myBGcolor;
+   }
+  }
+ </script>
+
+
+p.126
+const now = new Date();
+const currentHour = now.getHours(); // מקבל את השעה (0-23) 
+const currentMinutes = now.getMinutes(); // מקבל את הדקות (0-59) 
+const currentSeconds = now.getSeconds(); 
+
+
+p.128
+<p id="welcomeMessage"></p>
+<script>
+  const now = new Date();
+  const currentHour = now.getHours(); // מקבל את השעה (0-23)
+    if (currentHour < 12) {
+   document.getElementById("welcomeMessage").innerText = "Good Morning";
+  }
+</script>
+
+
+p.118
+<p id="welcomeMessage"></p>
+<script>
+  const now = new Date();
+  const currentHour = now.getHours(); // מקבל את השעה (0-23)
+  if (currentHour < 12) {
+   document.getElementById("welcomeMessage").innerText = "Good Morning";
+  } else {
+   document.getElementById("welcomeMessage").innerText = "Good Evening";
+   }
+</script>
+
+
+p.133
+<ul>
+<li>
+ברוכים הבאים לאתר www.getwebinar.co.il (להלן: "האתר") של זהר עמיהוד (להלן: "החברה").
+</li>
+<li>
+זהר עמיהוד פועל על מנת להבטיח כי המידע באתר זה יהיה מדויק ושלם, אולם זהר עמיהוד אינו אחראי לכל תוצאה העלולה לנבוע מטעות, השמטה, חוסר דיוק או ממידע מטעה המופיע באתר.
+</li>
+<li>
+מובהר בזאת, למען הסר ספק, כי זהר עמיהוד איננו אחראי לנזק ישיר ו/או עקיף ו/או הפסד/ים כספי/ים כלשהם העלולים להיגרם כתוצאה מנתונים המוצגים באתר זה.
+</li>
+<li>
+חלק מהשירותים הניתנים במערכת טעונים הרשמה. במסגרת ההרשמה תידרש למסור מידע אישי: שם, כתובת דואר אלקטרוני שלך ובמקרים מסויימים גם כתובת פיזית למשלוח דואר ומספר טלפון ואולי אף פרטים נוספים. הנתונים שתמסור בעת ההרשמה יישמרו במאגר המידע של המערכת. אינך חייב על-פי חוק למסור את המידע אולם אם לא תמסור אותו, לא תוכל להשתמש בשירותים הניתנים.
+</li>
+<li>
+תוכל להירשם לקבלת ניוזלטר ולהיות חלק מרשימת התפוצה של האתר. מי שנרשם מקבל מעת לעת דואר אלקטרוני הכולל: מידע עדכני, מאמרים, הודעות לגבי מוצרים ושירותים בין אם מוצרים של החברה ו/או מוצרים של צד שלישי.
+</li>
+<li>
+בעצם הרשמתך לקבלת מידע ו/או שירותים מהאתר, הנך מסכים כי מעת לעת תשלח אליך הצעה שיווקית מן האתר בין אם היא רלוונטית לתחומים המוצעים בו ובין שלא. הנך מסכים כי מעת לעת תשלח אליך הצעה שיווקית מן האתר בין אם היא רלוונטית למידע הראשוני שסופק לך מהאתר ובין שלא. הניוזלטר מכיל פרסומות.
+</li>
+<li>
+מצטרף לרשימת התפוצה (ניוזלטר) מי שבוחר להצטרף, הזין את פרטיו האישיים בטופס ואישר את הצטרפותו על ידי לחיצה על הקישור הנמצא בדואר אלקטרוני הנשלח אליו כחלק מתהליך ההרשמה. ניתן, בכל עת, למחוק את שמך מרשימת התפוצה. פרטים על תהליך ההסרה נמצאים בתחתית כל דבר דואר שתקבל מהחברה.
+</li>
+<li>
+מנהל האתר רשאי להשתמש בפרטים שתמסור באתר ובמידע שייאסף אודות דפוסי השימוש, לצורך שיפור השירותים, ואו ליצירת קשר בדואר אלקטרוני.
+</li>
+<li>
+החברה לא תעביר לצד שלישי מידע שיזהה את הגולשים באתר, ולא תעביר את פרטיך, חלקם או כולם לצד שלישי.
+</li>
+<li>
+האתר מאפשר מציאת מידע ייעודי הנוגע למוצרים ו/או שירותים של החברה. אוסף התכנים באתר נתון לשינויים בכל עת על-פי שיקול דעת של מנהל האתר. למרות שבמהלך עדכון התכנים באתר מושקע מאמץ רב בכדי לשמור על תיאור מדויק ואקטואליות, אין באפשרות האתר להתחייב על עדכניות, נכונות, איכות, טבע, אמינות ויישום תיאור התכנים המפורטים באתר.
+</li>
+<li>
+החברה עושה כמיטב יכולתה באמצעים העומדים לרשותו לשמור על סודיות פרטי לקוחותיו מלהגיע לידי גורמים זרים.
+</li>
+<li>
+האתר שומר לעצמו את הזכות להשתמש במידע שייאסף בעקבות השימוש באתר למטרות יצירת קשר, ניתוח סטטיסטי, דפוסי שימוש וכיו"ב.
+</li>
+<li>
+האתר והניוזלטר עשויים לספק תכנים וקישורים לרכישת מוצרים ו/או שירותים באתרים אחרים. החברה לא תישא במישרין או בעקיפין באחריות לנזקים שייגרמו לך בגלל עיכובים באספקה, או לכל דבר אחר הקשור בהזמנת מוצרים ו/או שירותים מהאתר שבו רכשת. כמו כן, החברה אינה אחראית לתכנים ולתוצאות, ישירות או עקיפות שעלולות להיגרם לך או לצד שלישי כלשהו אם החלטת לפעול על בסיס תכנים אלה.
+</li>
+</ul>
+
+
+p.134
+function paintBG() {
+  let myBGcolor = "yellow";
+  let pTags = document.getElementsByClassName("line");
+  for (let index = 0; index < pTags.length; index=index+2) {
+     pTags[index].style.backgroundColor = myBGcolor;
+  }
+}
+
+
+p.136
+function paintBG() {
+ let myBGcolor = "yellow";
+ let pTags = document.getElementsByClassName("line");
+ for (let index = 0; index < pTags.length; index++) {
+   if (index % 2 == 0) {
+     pTags[index].style.backgroundColor = myBGcolor;
+   }
+ }
+}
+
+
+p.137
+function paintBG() {
+  let myBGcolor = "yellow";
+  let pTags = document.getElementsByClassName("line");
+  let paintYesNo = 1;
+  for (let index = 0; index < pTags.length; index++) {
+    if (paintYesNo == 1) {
+      pTags[index].style.backgroundColor = myBGcolor;
+    }
+    paintYesNo = paintYesNo * -1;
+  }
+}
+
+
+p.138
+    <style>
+    .bg-line-color {
+      background-color: yellow;
+    }
+    </style>
+
+<script>
+function paintBG() {
+  let pTags = document.getElementsByClassName("line");
+  let paintYesNo = 1;
+  for (let index = 0; index < pTags.length; index++) {
+    if (paintYesNo == 1) {
+      pTags[index].classList.add("bg-line-color");
+    }
+    paintYesNo = paintYesNo * -1;
+  }
+}
+</script>
+
+
+
+
+p143
+<form name="contactFormShort">
+<p><label for="firstName">First name</label>
+<input id="firstName" name="fname" type="text" size="24" maxlength="34" required="required" placeholder="Israel" title="Please provide only your first name" /></p>
+<p><label for="lastName">Last name</label>
+<input id="lastName" name="lname" type="text" size="24" maxlength="34" required="required" placeholder="Israeli" title="Please provide only your last name" /></p>
+<p><input type="submit" value="Send Request" onclick="showFormInput();" /></p>
+</form>
+
+
+p145
+function showFormInput() {
+  let fName = document.getElementById("firstName");
+  let lName = document.getElementById("lastName");
+  window.alert("First Name: " + fName + "\n" + "Last Name: " + lName);
+}
+
+
+p146
+function showFormInput() {
+  let fName = document.getElementById("firstName").value;
+  let lName = document.getElementById("lastName").value;
+  window.alert("First Name: " + fName + "\n" + "Last Name: " + lName);
+}
+
+
+p148
+<h1>BMI Calculator</h1>
+<form name="contactFormShort">
+  <p>
+    <label for="yourWeight">Your Weight</label>
+    <input id="yourWeight"name="yourWeight"type="number"required="required"placeholder="Weight in Kg (for example: 83)"title="Please enter your weight"
+    />
+  </p>
+  <p>
+    <label for="yourHeight">Your Height</label>
+    <input  id="yourHeight"name="yourHeight"type="number"required="required"placeholder="Height in m (for example: 1.78)"title="Please enter your height"
+    />
+  </p>
+  <p>
+    <button type="button" onclick="showFormInput();">Calculate BMI</button>
+  </p>
+</form>
+<p id="resultBMI"></p>
+<script>
+  function showFormInput() {
+    let weight = document.getElementById("yourWeight").value;
+    let height = document.getElementById("yourHeight").value;
+    window.alert("Your Weight: " + weight + "\nYour Height: " + height);
+  }
+</script>
+
+
+p149
+function showFormInput() {
+  let weight = document.getElementById("yourWeight").value;
+  let height = document.getElementById("yourHeight").value;
+  // window.alert("Your Weight: " + weight + "\nYour Height: " + height);
+  let calBMI = weight / (height * height);
+  document.getElementById("resultBMI").textContent = calBMI;
+}
+
+
+p152
+function showFormInput() {
+  let weight = document.getElementById("yourWeight").value;
+  let height = document.getElementById("yourHeight").value;
+  // window.alert("Your Weight: " + weight + "\nYour Height: " + height);
+  let calBMI = weight / (height * height);
+  calBMI = Math.trunc(calBMI * 100) / 100;
+  document.getElementById("resultBMI").textContent = calBMI;
+}
+
+
+p153
+function showFormInput() {
+  weight = document.getElementById("yourWeight").value;
+  height = document.getElementById("yourHeight").value;
+  // window.alert("Your Weight: " + weight + "\nYour Height: " + height);
+  let calBMI = weight / (height * height);
+  calBMI = calBMI.toFixed(2);
+  document.getElementById("resultBMI").textContent = calBMI;
+}
+
+
+p156
+function showFormInput() {
+  let weight = document.getElementById("yourWeight").value;
+  let height = document.getElementById("yourHeight").value;
+  // window.alert("Your Weight: " + weight + "\nYour Height: " + height);
+  let calBMI = weight / (height * height);
+  // calBMI = Math.trunc(calBMI * 100) / 100;
+  calBMI = Number.parseFloat(calBMI.toFixed(2));
+  document.getElementById("resultBMI").textContent = calBMI;
+}
+
+
+
+עד פה
+
+
+p134
+<form
+  name="contactFormShort"
+  action="https://www.w3schools.com/action_page.php"
+  method="get">
+  <label for="emailAddress">כתובת הדואר האלקטרוני שלך</label>
+  <input
+    id="emailAddress"
+    name="yourEmail"
+    type="email"
+    size="64"
+    maxlength="64"
+    required="required"
+    placeholder="example@domain.com"
+    title="אנא הזינו את כתובת הדואר האלקטרוני שלכם בלבד" /><p id="errorEmail" class="errorMsg"></p><input type="button" value="בדוק תקינות" onclick="emailCheck();" /><input id="formSubmit" type="submit" value="שלח" disabled />
+</form>
+<style>
+  .errorMsg {
+    background-color: rgb(245, 194, 202);
+    display: none;
+  }
+</style>
+
+
+p135
+let gmailTypo = new Array();
+gmailTypo[0] = "gail.com";
+gmailTypo[1] = "gamil.com";
+gmailTypo[2] = "gmail.co.il";
+gmailTypo[3] = "gmail.co";
+
+
+p137
+function emailCheck() {
+  // תוכן השדה אימייל
+  let emailCon = document.getElementById("emailAddress").value;
+
+  // המיקום של ה- @ בכתובת המייל
+  let atPlace = emailCon.indexOf("@");
+
+  // "נגזור" את כל מה שנמצא אחרי ה- @, זוהי הסיומת של כתובת המייל
+  let toCheck = emailCon.substring(atPlace + 1);
+
+  // משתנה שמסמן האם הסיומת שהזין המשתמש נמצאת במערך הסיומות השגויות שלנו. בהתחלה, לפני שמתחילה הבדיקה- היא לא נמצאת
+  let isFound = false;
+
+  // הלולאה רצה על כל מערך הסיומות השגויות. אם הסיומת שהזין המשתמש שווה לאחת המסיומות הללו-
+  // נשנה את ערך המשתנה found
+  // ל- 1, כלומר הסיומת נמצאת במערך הסיומות השגויות
+  for (let index = 0; index < gmailTypo.length; index++) {
+    if (toCheck == gmailTypo[index]) {isFound = true;
+    }
+  }
+}
+
+
+p140
+<script>
+  let gmailTypo = new Array();
+  gmailTypo[0] = "gail.com";
+  gmailTypo[1] = "gamil.com";
+  gmailTypo[2] = "gmail.co.il";
+  gmailTypo[3] = "gmail.co";
+  let nLoop = 0;
+  function emailCheck() {
+    let emailCon = document.getElementById("emailAddress").value;
+    let atPlace = emailCon.indexOf("@");
+    let toCheck = emailCon.substring(atPlace + 1);
+    // console.log(toCheck);
+    let isFound = false;
+    for (let index = 0; index < gmailTypo.length; index++) {nLoop++;if (toCheck == gmailTypo[index]) {  isFound = true;}
+    }
+    window.alert("Runs " + nLoop + " times");
+    nLoop = 0;
+  }
+</script>
+
+
+p144
+<script>
+  let gmailTypo = new Array();
+  gmailTypo[0] = "gail.com";
+  gmailTypo[1] = "gamil.com";
+  gmailTypo[2] = "gmail.co.il";
+  gmailTypo[3] = "gmail.co";
+  let nLoop = 0;
+  function emailCheck() {
+    let emailCon = document.getElementById("emailAddress").value;
+    let atPlace = emailCon.indexOf("@");
+    let toCheck = emailCon.substring(atPlace + 1);
+    // console.log(toCheck);
+    let isFound = false;
+    for (let index = 0; index < gmailTypo.length; index++) {nLoop++;if (toCheck == gmailTypo[index]) {  isFound = true;  break;}
+    }
+    window.alert("Runs " + nLoop + " times");
+    nLoop = 0;
+  }
+</script>
+
+
+p148
+if (isFound) {
+  let showTheErrorMsg = document.getElementById("errorEmail");
+  showTheErrorMsg.innerText = "כתובת דואר אלקטרוני אינה תקינה";
+  showTheErrorMsg.style.display = "block";
+} else {
+  document.getElementById("errorEmail").style.display = "none";
+}
+
+
+if (isFound) {
+  document.getElementById("errorEmail").innerText =
+    "כתובת דואר אלקטרוני אינה תקינה";
+  document.getElementById("errorEmail").style.display = "block";
+} else {
+  document.getElementById("errorEmail").style.display = "none";
+}
+
+
+p150
+function checkValid() {  
+if (isEmailValid) {
+    document.getElementById("formSubmit").disabled = false;
+  } else {
+    document.getElementById("formSubmit").disabled = true;
+  }
+  isEmailValid = false;
+}
+
+
+p151
+<form
+  name="contactFormShort"
+  action="https://www.w3schools.com/action_page.php"
+  method="get"
+>
+  <label for="emailAddress">כתובת הדואר האלקטרוני שלך</label>
+  <input
+    id="emailAddress"
+    name="yourEmail"
+    type="email"
+    size="64"
+    maxlength="64"
+    required="required"
+    placeholder="example@domain.com"
+    title="אנא הזינו את כתובת הדואר האלקטרוני שלכם בלבד"
+  />
+  <p id="errorEmail" class="errorMsg"></p>
+  <input type="button" value="בדוק תקינות" onclick="emailCheck();" />
+  <input id="formSubmit" type="submit" value="שלח" disabled />
+</form>
+<style>
+  .errorMsg {
+    background-color: rgb(245, 194, 202);
+    display: none;
+  }
+</style>
+<script>
+  let isEmailValid = false;
+
+  let gmailTypo = new Array();
+  gmailTypo[0] = "gail.com";
+  gmailTypo[1] = "gamil.com";
+  gmailTypo[2] = "gmail.co.il";
+  gmailTypo[3] = "gmail.co";
+  function emailCheck() {
+    let emailCon = document.getElementById("emailAddress").value;
+    let atPlace = emailCon.indexOf("@");
+    let toCheck = emailCon.substring(atPlace + 1);
+    // console.log(toCheck);
+    let isFound = false;
+    for (let index = 0; index < gmailTypo.length; index++) {
+      if (toCheck == gmailTypo[index]) {
+        isFound = true;
+        break;
+      }
+    }
+    if (isFound) {
+      let showTheErrorMsg = document.getElementById("errorEmail");
+      showTheErrorMsg.innerText = "כתובת דואר אלקטרוני אינה תקינה";
+      showTheErrorMsg.style.display = "block";
+    } else {
+      document.getElementById("errorEmail").style.display = "none";
+      isEmailValid = true;
+    }
+    checkValid();
+  }
+  function checkValid() {
+    if (isEmailValid) {
+      document.getElementById("formSubmit").disabled = false;
+    } else {
+      document.getElementById("formSubmit").disabled = true;
+    }
+    isEmailValid = false;
+  }
+</script>
+
+
+p160
+<div id="meatLoaf" class="meatLoaf" style="font-size: 21px; color: white">
+I'd Do Anything For Love
+</div>
+
+<style>
+  .meatLoaf { 
+     padding: 10px;  
+     background-color: navy;
+  }
+</style>
+
+<script>
+  let meatLoafEl = document.getElementById("meatLoaf");
+  console.log(meatLoafEl.style);
+</script>
+
+
+p162
+window.getComputedStyle();
+
+// console.log(meatLoafEl.style);
+console.log(getComputedStyle(meatLoafEl));
+
+
+p163
+<script>
+  let meatLoafEl = document.getElementById("meatLoaf");
+  let meatLoafComputedStyleEl = getComputedStyle(meatLoafEl);
+  console.log(meatLoafEl.style);
+  console.log(meatLoafComputedStyleEl);
+  let whatFontSize = meatLoafComputedStyleEl.fontSize;
+  console.log("fontSize: " + whatFontSize);
+  let whatColor = meatLoafComputedStyleEl.color;
+  console.log("color: " + whatColor);
+  let whatBackgroundColor = meatLoafComputedStyleEl.backgroundColor;
+  console.log("backgroundColor: " + whatBackgroundColor);
+  let whatPadding = meatLoafComputedStyleEl.padding;
+  console.log("padding: " + whatPadding);
+</script>
+
+
+p164
+    <style>
+      .bonJovi {
+        border: 3px dashed #b80fac;
+        font-size: 56px;
+        padding: 12px;
+      }
+    </style>
+    <div>
+      <a
+        class="bonJovi"
+        style="font-size: 34px"
+        href="https://www.youtube.com/watch?v=vx2u5uUu3DE"
+        alt="Bon Jovi"
+        title="Bon Jovi">
+        It's My Life</a>
+    </div>
+
+
+
+p167
+    <div id="greatestHits">
+      <p id="Europe">
+        <a href="https://www.youtube.com/watch?v=9jK-NcRmVcw"
+          title="The Final Countdown (Official Video)"
+          tareg="_blank">The Final Countdown</a>
+      </p>
+      <p id="JenniferRush">
+        <a href="https://www.youtube.com/watch?v=b_zHQ6kFuQ0"
+          title="The Power Of Love (Official Video)"
+          target="_blank">The Power Of Love</a>
+      </p>
+    </div>
+
+    <script>
+  let ahaEl = document.createElement("p");
+  ahaEl.innerHTML =
+    "<a href='https://www.youtube.com/watch?v=djV11Xbc914' title='Take On Me Official Video)' target='_blank'>Take On Me</a>";
+  greatestHitsEl = document.getElementById("greatestHits");
+  greatestHitsEl.appendChild(ahaEl);
+    </script>
+
+
+p168
+    <div id="greatestHits">
+      <p id="Europe">
+        <a
+          href="https://www.youtube.com/watch?v=9jK-NcRmVcw"
+          title="The Final Countdown (Official Video)"
+          tareg="_blank"
+          >The Final Countdown</a
+        >
+      </p>
+      <p id="JenniferRush">
+        <a
+          href="https://www.youtube.com/watch?v=b_zHQ6kFuQ0"
+          title="The Power Of Love (Official Video)"
+          target="_blank"
+          >The Power Of Love</a
+        >
+      </p>
+    </div>
+    <script>
+      let ahaEl = document.createElement("p");
+      ahaEl.innerHTML =
+        "<a href='https://www.youtube.com/watch?v=djV11Xbc914' title='Take On Me (Official Video)' target='_blank'>Take On Me</a>";
+      greatestHitsEl = document.getElementById("greatestHits");
+      greatestHitsEl.children[0].appendChild(ahaEl);
+    </script>
+
+
+
+p169
+    <div id="greatestHits">
+      <p id="Europe">
+        <a
+          href="https://www.youtube.com/watch?v=9jK-NcRmVcw"
+          title="The Final Countdown (Official Video)"
+          tareg="_blank"
+          >The Final Countdown</a
+        >
+      </p>
+      <p id="JenniferRush">
+        <a
+          href="https://www.youtube.com/watch?v=b_zHQ6kFuQ0"
+          title="The Power Of Love (Official Video)"
+          target="_blank"
+          >The Power Of Love</a
+        >
+      </p>
+    </div>
+    <script>
+      let ahaEl = document.createElement("p");
+      ahaEl.innerHTML =
+        "<a href='https://www.youtube.com/watch?v=djV11Xbc914' title='Take On Me (Official Video)' target='_blank'>Take On Me</a>";
+      greatestHitsEl = document.getElementById("greatestHits");
+      greatestHitsEl.prepend(ahaEl);
+    </script>
+
+
+p174
+ <p id="uni" onclick="getUniBigText();">ariel</p>
+ <script>
+  function getUniBigText() {
+      // פה רושמים את שורות הקוד
+  }
+ </script>
+
+-----
+
+ <p id="uni">ariel</p>
+ <script>
+  let myTextEl = document.getElementById("uni");
+  myTextEl.onclick = function() {
+      // פה רושמים את שורות הקוד
+  }
+ </script>
+
+
+p176
+<button type="button" id="clicker">Click Me!</button>
+
+<script>
+let clickerButton = document.getElementById("clicker");
+clickerButton.addEventListener("click", function() { 
+  // פה רושמים את שורות הקוד
+});
+</script>
+
+-----
+
+<script>
+let clickerButton = document.getElementById("clicker");
+let onButtonClick = function() { 
+  // פה רושמים את שורות הקוד
+};
+clickerButton.addEventListener("click", onButtonClick);
+</script>
+
+
+p179
+<button type="button" id="clicker">Click Me!</button>
+
+let buttonOnClickEl = document.getElementById("clicker");
+buttonOnClickEl.onclick = function () {
+   // פה רושמים את שורות הקוד
+};
+
+
+-----
+
+let buttonOnClickEl = document.getElementById("clicker");
+buttonOnClickEl.addEventListener ("click", function () {
+  // פה רושמים את שורות הקוד
+});
+
+
+p180
+<p id="uni">ariel</p>
+<script>
+  let myTextEl = document.getElementById("uni");
+  myTextEl.onclick = function () {
+    // פה רושמים את שורות הקוד
+  };
+  myTextEl.onclick = function () {
+    // פה רושמים את שורות הקוד
+  };
+</script>
+
+
+p181
+<p id="uni">ariel</p>
+<script>
+  let myTextEl = document.getElementById("uni");
+  myTextEl.onclick = function () {
+   // פה רושמים את שורות הקוד
+  };
+  myTextEl.onmouseover = function () {
+   // פה רושמים את שורות הקוד
+  };
+</script>
+
+
+p182
+<p id="uni">ariel</p>
+<script>
+  let myTextEl = document.getElementById("uni");
+  myTextEl.addEventListener("click", function () {
+   // פה רושמים את שורות הקוד
+  });
+  myTextEl.addEventListener("click", function () {
+   // פה רושמים את שורות הקוד
+  });
+</script>
+
+
+p183
+<p id="uni">ariel</p>
+<script>
+  let myTextEl = document.getElementById("uni");
+  myTextEl.addEventListener("click", function () {
+   // פה רושמים את שורות הקוד
+  });
+  myTextEl.addEventListener("onmouseover", function () {
+   // פה רושמים את שורות הקוד
+  });
+</script>
+
+
+p185
+    <p class="line">line1</p>
+    <p class="line">line2</p>
+    <p class="line">line3</p>
+    <p class="line">line4</p>
+    <button type="button" onclick="paintBG();">Click Me!</button>
+    <script>
+      function paintBG() {
+        let myBGcolor = "gray";
+        let pTags = document.getElementsByClassName("line");
+        for (let index = 0; index < pTags.length; index++) {
+          pTags[index].style.backgroundColor = myBGcolor;
+        }
+      }
+    </script>
+
+
+p186
+    <h1>BMI Calculator</h1>
+    <form name="contactFormShort">
+      <p>
+        <label for="yourWeight">Your Weight</label>
+        <input
+          id="yourWeight"
+          name="yourWeight"
+          type="number"
+          required="required"
+          placeholder="Weight in Kg (for example: 83)"
+          title="Please enter your weight"
+        />
+      </p>
+      <p>
+        <label for="yourHeight">Your Height</label>
+        <input
+          id="yourHeight"
+          name="yourHeight"
+          type="number"
+          required="required"
+          placeholder="Height in m (for example: 1.78)"
+          title="Please enter your height"
+        />
+      </p>
+      <p>
+        <button type="button" onclick="showFormInput();">Calculate BMI</button>
+      </p>
+    </form>
+    <p id="resultBMI"></p>
+    <script>
+      function showFormInput() {
+        let weight = document.getElementById("yourWeight").value;
+        let height = document.getElementById("yourHeight").value;
+        let calBMI = weight / (height * height);
+        calBMI = Number.parseFloat(calBMI.toFixed(2));
+        document.getElementById("resultBMI").textContent = calBMI;
+      }
+    </script>
+
+
+p195
+{
+border: 10px solid transparent;
+padding: 15px;
+border-image: linear-gradient(to bottom right, red,orange,yellow,green,blue,indigo,violet) 1%;
+}
+
+
+https://www.w3schools.com/css/css3_gradients.asp
+
+
+p199
+https://www.w3schools.com/cssref/css_selectors.php
+https://www.freecodecamp.org/news/css-selectors-cheat-sheet/
+
+
+p204
+let myButtonEl = document.querySelector("#myButton");
+myButtonEl.textContent = "טקסט חדש";
+
+או
+
+document.getElementById("myButton").textContent = "טקסט חדש";
+
+
+p205
+let myButtonEl = document.querySelector("#myButton");
+myButtonEl.style.backgroundColor = "red";
+
+או
+
+document.getElementById("myButton").style.backgroundColor = "red";
+
+
+p211
+    <script>
+      let BMIbuttonEl = document.getElementById("BMIbutton");
+      BMIbuttonEl.addEventListener("click", function () {
+
+      });
+    </script>
+
+
+p212
+<script>
+  let BMIbuttonEl = document.getElementById("BMIbutton");
+  BMIbuttonEl.addEventListener ("click",
+    function (e) { 
+      e.preventDefault();
+
+  });
+</script>
+
+
+p213
+<script>
+  let BMIbuttonEl = document.getElementById("BMIbutton");
+  BMIbuttonEl.addEventListener ("click",
+  function (e) { 
+    e.preventDefault();
+    weight = document.getElementById("form-field-yourWeight").value;
+    height = document.getElementById("form-field-yourHeight").value;
+
+  });
+</script>
+
+
+p214
+<script>
+  let BMIbuttonEl = document.getElementById("BMIbutton");
+  BMIbuttonEl.addEventListener ("click",
+  function (e) { 
+    e.preventDefault();
+    weight = document.getElementById("form-field-yourWeight").value;
+    height = document.getElementById("form-field-yourHeight").value;
+    let calBMI = weight / (height * height);
+    calBMI = Math.trunc(calBMI * 100) / 100;
+    document.getElementById("resultBMI").textContent = calBMI;
+  });
+</script>
+
+
+p216
+<script>
+  let BMIbuttonEl = document.getElementById("BMIbutton");
+  BMIbuttonEl.addEventListener ("click",
+  function (e) { 
+    e.preventDefault();
+    weight = document.getElementById("form-field-yourWeight").value;
+    weight = parseFloat(weight);
+    height = document.getElementById("form-field-yourHeight").value;
+    height = parseFloat(height);
+    let calBMI = weight / (height * height);
+    calBMI = Math.trunc(calBMI * 100) / 100;
+    document.getElementById("resultBMI").textContent = calBMI;
+  });
+</script>
+
+===============
+עד פה
+
+p226
+let buttonOnClickEl = document.getElementById("myIconListButton");
+buttonOnClickEl.onclick = function (event) {
+  event.preventDefault(); // disable the link in button
+
+
+};
+
+
+p228
+let buttonOnClickEl = document.getElementById("myIconListButton");
+buttonOnClickEl.onclick = function (event) {
+  event.preventDefault(); // disable the link in button
+  let liTags = document.querySelectorAll("#myIconList .elementor-icon-list-item");
+  liTags[0].style.backgroundColor = "gray";
+  liTags[1].style.backgroundColor = "gray";
+  liTags[2].style.backgroundColor = "gray";
+  liTags[3].style.backgroundColor = "gray";
+}
+
+או
+
+let buttonOnClickEl = document.getElementById("myIconListButton");
+buttonOnClickEl.onclick = function (event) {
+  event.preventDefault(); // disable the link in button
+  document.querySelectorAll("#myIconList .elementor-icon-list-item")[0].style.backgroundColor = "gray";
+  document.querySelectorAll("#myIconList .elementor-icon-list-item")[1].style.backgroundColor = "gray";
+  document.querySelectorAll("#myIconList .elementor-icon-list-item")[2].style.backgroundColor = "gray";
+  document.querySelectorAll("#myIconList .elementor-icon-list-item")[3].style.backgroundColor = "gray";
+}
+
+או
+
+let buttonOnClickEl = document.getElementById("myIconListButton");
+buttonOnClickEl.onclick = function (event) {
+  event.preventDefault(); // disable the link in button
+  let myBGcolor = "gray";
+  let liTags = document.querySelectorAll("#myIconList .elementor-icon-list-item");
+  liTags[0].style.backgroundColor = myBGcolor;
+  liTags[1].style.backgroundColor = myBGcolor;
+  liTags[2].style.backgroundColor = myBGcolor;
+  liTags[3].style.backgroundColor = myBGcolor;
+}
+
+
+p229
+let liTags = document.querySelectorAll("#myIconList .elementor-icon-list-item");
+
+let noOfItems = liTags.length;
+
+
+p230
+for (let index = 0; index < 10; index++) {
+  console.log(index);
+}
+
+
+p231
+let liTags = document.querySelectorAll("#myIconList .elementor-icon-list-item");
+let myBGcolor = "gray";
+for (let index = 0; index < liTags.length; index++) {
+  liTags[index].style.backgroundColor = myBGcolor;
+}
+
+או
+
+let liTags = document.querySelectorAll("#myIconList .elementor-icon-list-item");
+let myBGcolor = "gray";
+for (let index = 0; index <= liTags.length - 1; index++) {
+ liTags[index].style.backgroundColor = myBGcolor;
+}
+
+
+p232
+let buttonOnClickEl = document.getElementById("myIconListButton");
+buttonOnClickEl.onclick = function (event) {
+  event.preventDefault(); // disable the link in button
+  let myBGcolor = "gray";
+  let liTags = document.querySelectorAll("#myIconList .elementor-icon-list-item");
+  for (let index = 0; index < liTags.length; index++) {
+    liTags[index].style.backgroundColor = myBGcolor;
+  }
+};
+
+=============
+מיון
+
+p239
+https://www.youtube.com/watch?v=xli_FI7CuzA
+https://www.youtube.com/watch?v=lyZQPjUT5B4
+
+
+p245
+let myBigListButtonEl = document.getElementById("myBigListButton");
+myBigListButtonEl.addEventListener("click", function () {
+
+});
+
+
+p247
+let myBigListEl = document.querySelectorAll("#myBigList > div > ul > li");
+let myBigListButtonEl = document.getElementById("myBigListButton");
+myBigListButtonEl.addEventListener("click", function () {
+
+});
+
+
+p248
+let myBigListEl = document.querySelectorAll("#myBigList > div > ul > li");
+let myBigListButtonEl = document.getElementById("myBigListButton");
+myBigListButtonEl.addEventListener("click", function (e) {
+  e.preventDefault();
+  for (let dLoop = 0; dLoop < myBigListEl.length; dLoop++) {
+    for (let index = 0; index < myBigListEl.length - 1; index++) {
+      if (myBigListEl[index].innerText > myBigListEl[index + 1].innerText) {
+        temp = myBigListEl[index].innerText;
+        myBigListEl[index].innerText = myBigListEl[index + 1].innerText;
+        myBigListEl[index + 1].innerText = temp;
+      }
+    }
+  }
+});
+
+
+p249
+let myBigListEl = document.querySelectorAll("#myBigList > div > ul > li");
+let myBigListButtonEl = document.getElementById("myBigListButton");
+myBigListButtonEl.addEventListener("click", function (e) {
+  e.preventDefault();
+  for (let dLoop = 0; dLoop < myBigListEl.length; dLoop++) {
+    for (let index = 0; index < myBigListEl.length - 1; index++) {
+      if (myBigListEl[index].innerText > myBigListEl[index + 1].innerText) {
+        temp = myBigListEl[index].innerHTML;
+        myBigListEl[index].innerHTML = myBigListEl[index + 1].innerHTML;
+        myBigListEl[index + 1].innerHTML = temp;
+      }
+    }
+  }
+});
+
+
+
+
+p253
+let myBigListEl = document.querySelectorAll("#myBigList > div > ul > li");
+let myBigListButtonEl = document.getElementById("myBigListButton");
+myBigListButtonEl.addEventListener("click", function (e) {
+  e.preventDefault();
+  for (let dLoop = 0; dLoop < myBigListEl.length; dLoop++) {
+    for (let index = 0; index < myBigListEl.length – 1 - dLoop; index++) {
+      if (myBigListEl[index].innerText > myBigListEl[index + 1].innerText) {
+        temp = myBigListEl[index].innerHTML;
+        myBigListEl[index].innerHTML = myBigListEl[index + 1].innerHTML;
+        myBigListEl[index + 1].innerHTML = temp;
+      }
+    }
+  }
+});
+
+
+p255
+let myBigListEl = document.querySelectorAll("#myBigList > div > ul > li > span");
+let myBigListButtonEl = document.getElementById("myBigListButton");
+myBigListButtonEl.addEventListener("click", function (e) {
+  e.preventDefault();
+  for (let dLoop = 0; dLoop < myBigListEl.length; dLoop++) {
+    isSort = true;
+    for (let index = 0; index < myBigListEl.length – 1 - dLoop; index++) {
+      if (myBigListEl[index].innerText > myBigListEl[index + 1].innerText) {
+        isSort = false;
+        temp = myBigListEl[index].innerHTML;
+        myBigListEl[index].innerHTML = myBigListEl[index + 1].innerHTML;
+        myBigListEl[index + 1].innerHTML = temp;
+      }
+    }
+    if (isSort) { break; }
+  }
+});
+
+
+
+==============
+menu
+
+p7
+<nav class="navbar">
+  <ul class="menu-top">
+    <li class="menu-top-item">
+      <a class="menu-top-item-link" title="" href="">דף הבית</a>
+    </li>
+    <li class="menu-top-item">
+      <a class="menu-top-item-link" title="" href="">אודות</a>
+    </li>
+    <li class="menu-top-item">
+      <a class="menu-top-item-link" title="" href="">בלוג</a>
+    </li>
+    <li class="menu-top-item">
+      <a class="menu-top-item-link" title="" href="">עבודות</a>
+    </li>
+    <li class="menu-top-item">
+      <a class="menu-top-item-link" title="" href="">צור קשר</a>
+    </li>
+  </ul>
+</nav>
+
+p11
+* {
+padding: 0px;
+margin: 0px;
+box-sizing: border-box;
+}
+
+.navbar {
+   height: 40px;
+   background-color: #f9e7cf;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+
+ul.menu-top {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ width: 600px;
+ list-style-type: none;
+}
+
+a.menu-top-item-link {
+  color: black;
+  text-decoration: none;
+}
+
+a.menu-top-item-link:hover {
+  color: navy;
+}
+
+
+p12
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.navbar {
+  height: 40px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul.menu-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 600px;
+  list-style-type: none;
+}
+
+li.menu-top-item {
+  text-align: center;
+  width: 100%;
+  border-left: 2px solid #3ca0e7;
+}
+
+a.menu-top-item-link {
+  color: black;
+  text-decoration: none;
+}
+
+a.menu-top-item-link:hover {
+  color: navy;
+}
+
+
+
+p14
+
+  <div class="burger-icon">
+     <div class="burger-line"></div>
+     <div class="burger-line"></div>
+     <div class="burger-line"></div>
+  </div>
+
+.burger-icon {
+  height: 28px;
+  width: 32px;
+}
+
+.burger-line {
+  background-color: black;
+  height: 4px;
+  margin-top: 4px;
+  width: 100%;
+}
+
+p16
+
+display: none;
+
+
+p18
+
+@media (max-width: 768px) {
+  .burger-icon {
+    display: block;
+  }
+  ul.menu-top {
+    display: none;
+  }
+}
+
+
+p22
+
+flex-direction: column;
+width: 100px;
+
+
+p25
+
+<div class="burger-icon" onclick="mobileMenuShow();">
+
+function mobileMenuShow() {
+  let menuTopEl = document.getElementsByClassName("menu-top");
+    menuTopEl[0].style.display = "flex";
+}
+
+
+p27
+
+@media (max-width: 768px) {
+  .burger-icon {
+    display: block;
+  }
+  ul.menu-top {
+    display: none;
+    flex-direction: column;
+    width: 100px;
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    background-color: rgb(255, 255, 255, 0.9);
+  }
+  li.menu-top-item {
+    text-align: right;
+    padding-right: 10px;
+  }
+}
+
+
+p30
+
+function mobileMenuShow() {
+  let menuTopEl = document.getElementsByClassName("menu-top");
+  if (menuTopEl[0].style.display == "flex") {
+    menuTopEl[0].style.display = "none";
+  } else {
+    menuTopEl[0].style.display = "flex";
+  }
+}
+
+
+
+p32
+
+@media (min-width: 769px) {
+  ul.menu-top {
+    display: flex !important;
+  }
+}
+
+
+p33
+
+<html dir="rtl" lang="he-IL">
+  <head>
+    <title>write here your webpage title</title>
+    <meta name="description" content="write here a short description" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="fileName.css" />
+    <script src="fineName.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="burger-icon" onclick="mobileMenuShow();">
+          <div class="burger-line"></div>
+          <div class="burger-line"></div>
+          <div class="burger-line"></div>
+        </div>
+        <ul class="menu-top">
+          <li class="menu-top-item">
+            <a class="menu-top-item-link" title="" href="">דף הבית</a>
+          </li>
+          <li class="menu-top-item">
+            <a class="menu-top-item-link" title="" href="">אודות</a>
+          </li>
+          <li class="menu-top-item">
+            <a class="menu-top-item-link" title="" href="">בלוג</a>
+          </li>
+          <li class="menu-top-item">
+            <a class="menu-top-item-link" title="" href="">עבודות</a>
+          </li>
+          <li class="menu-top-item">
+            <a class="menu-top-item-link" title="" href="">צור קשר</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </p>
+    </main>
+    <footer></footer>
+  </body>
+</html>
+
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.navbar {
+  height: 40px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul.menu-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 600px;
+  list-style-type: none;
+}
+
+li.menu-top-item {
+  text-align: center;
+  width: 100%;
+  border-left: 2px solid #3ca0e7;
+}
+
+a.menu-top-item-link {
+  color: black;
+  text-decoration: none;
+}
+
+a.menu-top-item-link:hover {
+  color: navy;
+}
+
+.burger-icon {
+  height: 28px;
+  width: 32px;
+  display: none;
+}
+
+.burger-line {
+  background-color: black;
+  height: 4px;
+  margin-top: 4px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .burger-icon {
+    display: block;
+  }
+  ul.menu-top {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    width: 100px;
+    background-color: rgb(255, 255, 255, 0.9);
+  }
+  li.menu-top-item {
+    text-align: right;
+    padding-right: 10px;
+  }
+}
+@media (min-width: 769px) {
+  ul.menu-top {
+    display: flex !important;
+  }
+}
+
+
+
+function mobileMenuShow() {
+  let menuTopEl = document.getElementsByClassName("menu-top");
+  if (menuTopEl[0].style.display == "flex") {
+    menuTopEl[0].style.display = "none";
+  } else {
+    menuTopEl[0].style.display = "flex";
+  }
+}
+
+
+<div>
+  <p>jhskhksc</p>
+  <p>jlll
+    <p>lkl;lvk</p>
+    <p>jcvlcljslcjl</p>
+  </p>
+</div>
+
+
+

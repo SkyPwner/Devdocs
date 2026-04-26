@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevDocs - Contact Us</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="headerInner">
+        <a href="index.html" class="logoLink" title="DevDocs Home">
+          <img
+            src="https://cdn.prod.website-files.com/61fc4082d1990015ce74e415/620fc3c7cba4a56fa0913796_Devdocs%20Logo%20Transpararent%20Dark.svg"
+            alt="DevDocs Logo"
+          />
+        </a>
+        <nav>
+          <ul>
+            <li><a href="index.html" title="Home Page">Home</a></li>
+            <li><a href="services.html" title="Our Services">Services</a></li>
+            <li>
+              <a href="solutions.html" title="Our Solutions">Solutions</a>
+            </li>
+            <li><a href="about-us.html" title="About Us">About</a></li>
+            <li>
+              <a href="contact-us.html" class="activeLink" title="Contact Us"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <a href="contact-us.html" class="btn btnHeader" title="Contact Us"
+          >Contact Us</a
+        >
+      </div>
+    </header>
+
+    <main>
+      <section class="contactSection">
+        <div class="wrapper">
+          <div class="contactBox">
+            <h1 class="contactTitle">Contact us</h1>
+            <p class="contactText">
+              Reach out for a quote and we will get back to you within 24 hours.
+            </p>
+
+            <form
+              id="contactForm"
+              name="contact_form"
+              class="contactForm"
+              onsubmit="sendToWebhook(event)"
+            >
+              <!-- Full Name -->
+              <div class="formGroup">
+                <label for="contactFullName" class="formLabel">Full Name</label>
+                <input
+                  type="text"
+                  id="contactFullName"
+                  name="contact_full_name"
+                  placeholder="Your full name"
+                  class="formInput"
+                />
+                <span id="errorFullName" class="errorMessage"></span>
+              </div>
+
+              <!-- Email -->
+              <div class="formGroup">
+                <label for="contactEmail" class="formLabel">Email</label>
+                <input
+                  type="email"
+                  id="contactEmail"
+                  name="contact_email"
+                  placeholder="you@example.com"
+                  class="formInput"
+                />
+                <span id="errorEmail" class="errorMessage"></span>
+              </div>
+
+              <!-- Phone -->
+              <div class="formGroup">
+                <label for="contactPhone" class="formLabel">Phone</label>
+                <input
+                  type="tel"
+                  id="contactPhone"
+                  name="contact_phone"
+                  placeholder="0501234567"
+                  class="formInput"
+                />
+                <span id="errorPhone" class="errorMessage"></span>
+              </div>
+
+              <button type="submit" class="btn submitButton">Send</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      // webhook URL from Make
+      const webhookURL =
+        "https://hook.eu1.make.com/82fpjs6a2nh2g4u9j03dn6rpw4495iw6";
+
+      // send form data to webhook after validation
+      async function sendToWebhook(event) {
+        event.preventDefault();
+
+        // get input elements
+        const inputFullName = document.getElementById("contactFullName");
+        const inputEmail = document.getElementById("contactEmail");
+        const inputPhone = document.getElementById("contactPhone");
+        const submitButton = event.target.querySelector(".submitButton");
+
+        // get error elements
+        const errorFullName = document.getElementById("errorFullName");
+        const errorEmail = document.getElementById("errorEmail");
+        const errorPhone = document.getElementById("errorPhone");
+
+        // get trimmed values
+        const fullName = inputFullName.value.trim();
+        const email = inputEmail.value.trim();
+        const phone = inputPhone.value.trim();
+
+        // reset previous errors
+        errorFullName.innerText = "";
+        errorEmail.innerText = "";
+        errorPhone.innerText = "";
+        inputFullName.classList.remove("invalidField");
+        inputEmail.classList.remove("invalidField");
+        inputPhone.classList.remove("invalidField");
+
+        let isFormValid = true;
+
+        // validation: full name — first show length error, then parts error
+        if (fullName.length < 7) {
+          errorFullName.innerText = "Full name must be at least 7 characters";
+          inputFullName.classList.add("invalidField");
+          isFormValid = false;
+        } else if (fullName.split(" ").length < 2) {
+          errorFullName.innerText = "Please enter first and last name";
+          inputFullName.classList.add("invalidField");
+          isFormValid = false;
+        }
+
+        // validation: email must not be empty
+        if (email === "") {
+          errorEmail.innerText = "Please enter your email";
+          inputEmail.classList.add("invalidField");
+          isFormValid = false;
+        }
+
+        // validation: phone — length first, then digits only, then must start with 05
+        let isPhoneDigitsOnly = true;
+        for (let i = 0; i < phone.length; i++) {
+          if (phone[i] < "0" || phone[i] > "9") {
+            isPhoneDigitsOnly = false;
+            break;
+          }
+        }
+
+        if (phone.length !== 10) {
+          errorPhone.innerText = "Phone must be exactly 10 digits";
+          inputPhone.classList.add("invalidField");
+          isFormValid = false;
+        } else if (isPhoneDigitsOnly === false) {
+          errorPhone.innerText =
+            "Phone must contain digits only, no dashes or spaces";
+          inputPhone.classList.add("invalidField");
+          isFormValid = false;
+        } else if (phone[0] + phone[1] !== "05") {
+          errorPhone.innerText = "Phone must start with 05";
+          inputPhone.classList.add("invalidField");
+          isFormValid = false;
+        }
+
+        // stop if any field is invalid
+        if (isFormValid === false) {
+          return;
+        }
+
+        // all valid — send to webhook
+        const formDataCollection = new FormData(event.target);
+        submitButton.disabled = true;
+
+        try {
+          const response = await fetch(webhookURL, {
+            method: "POST",
+            body: formDataCollection,
+          });
+
+          if (response.ok) {
+            window.location.href = "thank-you.html";
+          } else {
+            alert("Error: " + response.status + " " + response.statusText);
+            submitButton.disabled = false;
+          }
+        } catch (error) {
+          alert("Could not connect to server. Check your internet connection.");
+          submitButton.disabled = false;
+        }
+      }
+    </script>
+  </body>
+</html>
