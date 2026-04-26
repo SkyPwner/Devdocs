@@ -134,11 +134,19 @@
         let isFormValid = true;
 
         // validation: full name — first show length error, then parts error
+        let fullNamePartsCount = 0;
+        const fullNameParts = fullName.split(" ");
+        for (let i = 0; i < fullNameParts.length; i++) {
+          if (fullNameParts[i] !== "") {
+            fullNamePartsCount++;
+          }
+        }
+
         if (fullName.length < 7) {
           errorFullName.innerText = "Full name must be at least 7 characters";
           inputFullName.classList.add("invalidField");
           isFormValid = false;
-        } else if (fullName.split(" ").length < 2) {
+        } else if (fullNamePartsCount < 2) {
           errorFullName.innerText = "Please enter first and last name";
           inputFullName.classList.add("invalidField");
           isFormValid = false;
